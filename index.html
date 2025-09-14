@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+    <link rel="icon" type="image/png" href="D:\Interactive Quiz\logo.png">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- Home Page -->
+  <div id="home-container">
+    <h1>Quiz App</h1>
+    <p>Select a category to start:</p>
+    <button class="category-btn" onclick="loadQuestions('politics')">Politics</button>
+    <button class="category-btn" onclick="loadQuestions('sports')">Sports</button>
+    <button class="category-btn" onclick="loadQuestions('science')">Science</button>
+    <button class="category-btn" onclick="loadQuestions('math')">Mathematics</button>
+  </div>
+
+  <!-- Quiz Page -->
+  <div id="quiz-container" style="display:none;">
+    <div id="question"></div>
+    <div id="options"></div>
+    <button id="next-btn" onclick="nextQuestion()">Next</button>
+    <div id="result-box"></div>
+    <button id="home-btn" onclick="goHome()" style="display:none;">Go Home</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
