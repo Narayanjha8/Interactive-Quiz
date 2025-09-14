@@ -43,8 +43,8 @@ let currentIndex = 0;
 let score = 0;
 
 const categoryIds = {
-  science: 17, // Science & Nature from Open Trivia DB
-  math: 19     // Mathematics category
+  science: 17, 
+  math: 19    
 };
 
 function shuffleArray(arr) {
@@ -156,3 +156,4 @@ function goHome() {
   document.getElementById("quiz-container").style.display = "none";
   document.getElementById("home-container").style.display = "block";
 }
+
